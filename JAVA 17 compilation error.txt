@@ -1,0 +1,203 @@
+
+C:\devtools\spline-spark-agent-release-2.2.0\commons\src\main\scala\za\co\absa\spline\commons\config\ConfigurationImplicits.scala:136: warning: Could not find any member to link for "org.apache.commons.configuration.Configuration".
+  /**
+  ^
+C:\devtools\spline-spark-agent-release-2.2.0\commons\src\main\scala\za\co\absa\spline\commons\config\ConfigurationImplicits.scala:32: warning: Could not find any member to link for "org.apache.commons.configuration.Configuration".
+  /**
+  ^
+8 warnings found
+[INFO] Building jar: C:\devtools\spline-spark-agent-release-2.2.0\commons\target\agent-commons_2.12-2.2.0-javadoc.jar
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ agent-commons_2.12 ---
+[INFO] Installing C:\devtools\spline-spark-agent-release-2.2.0\commons\pom.xml to C:\Users\Sachi\.m2\repository\za\co\absa\spline\agent\spark\agent-commons_2.12\2.2.0\agent-commons_2.12-2.2.0.pom
+[INFO] Installing C:\devtools\spline-spark-agent-release-2.2.0\commons\target\agent-commons_2.12-2.2.0.jar to C:\Users\Sachi\.m2\repository\za\co\absa\spline\agent\spark\agent-commons_2.12\2.2.0\agent-commons_2.12-2.2.0.jar
+[INFO] Installing C:\devtools\spline-spark-agent-release-2.2.0\commons\target\agent-commons_2.12-2.2.0-javadoc.jar to C:\Users\Sachi\.m2\repository\za\co\absa\spline\agent\spark\agent-commons_2.12\2.2.0\agent-commons_2.12-2.2.0-javadoc.jar
+[INFO] 
+[INFO] -----------< za.co.absa.spline.agent.spark:agent-core_2.12 >------------
+[INFO] Building agent-core_2.12 2.2.0                                     [3/5]
+[INFO]   from core\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] 1 problem was encountered while building the effective model for org.apache.hadoop:hadoop-annotations:jar:2.6.5
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA
+[INFO] 
+[INFO] --- swagger-codegen:3.0.21:generate (swagger.api.v1_0) @ agent-core_2.12 ---
+[WARNING] Output directory does not exist, or is inaccessible. No file (.swagger-codegen-ignore) will be evaluated.
+[ERROR] 
+java.lang.RuntimeException: Could not generate model 'AgentInfo'
+    at io.swagger.codegen.v3.DefaultGenerator.generateModels (DefaultGenerator.java:451)
+    at io.swagger.codegen.v3.DefaultGenerator.generate (DefaultGenerator.java:779)
+    at io.swagger.codegen.v3.maven.plugin.CodeGenMojo.execute_ (CodeGenMojo.java:554)
+    at io.swagger.codegen.v3.maven.plugin.CodeGenMojo.execute (CodeGenMojo.java:319)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:126)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:328)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:903)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:280)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:203)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:569)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:361)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+    at org.codehaus.classworlds.Launcher.main (Launcher.java:41)
+Caused by: com.github.jknack.handlebars.HandlebarsException: /handlebars/scala/client/licenseInfo.mustache:2:6: java.lang.reflect.InaccessibleObjectException: Unable to make public boolean java.util.Collections$EmptyMap.isEmpty() accessible: module java.base does not "opens java.util" to unnamed module @4e5f391c
+    /handlebars/scala/client/licenseInfo.mustache:2:6
+    at java.lang.reflect.AccessibleObject.checkCanSetAccessible (AccessibleObject.java:354)
+    at java.lang.reflect.AccessibleObject.checkCanSetAccessible (AccessibleObject.java:297)
+    at java.lang.reflect.Method.checkCanSetAccessible (Method.java:200)
+    at java.lang.reflect.Method.setAccessible (Method.java:194)
+    at com.github.jknack.handlebars.context.MemberValueResolver.cache (MemberValueResolver.java:82)
+    at com.github.jknack.handlebars.context.MemberValueResolver.resolve (MemberValueResolver.java:54)
+    at com.github.jknack.handlebars.Context$CompositeValueResolver.resolve (Context.java:199)
+    at com.github.jknack.handlebars.internal.path.PropertyPath.eval (PropertyPath.java:52)
+    at com.github.jknack.handlebars.Context$PathExpressionChain.next (Context.java:361)
+    at com.github.jknack.handlebars.Context$PathExpressionChain.eval (Context.java:381)
+    at com.github.jknack.handlebars.Context.get (Context.java:621)
+    at com.github.jknack.handlebars.Context$PartialCtx.get (Context.java:165)
+    at com.github.jknack.handlebars.internal.Variable.value (Variable.java:183)
+    at com.github.jknack.handlebars.internal.Variable.merge (Variable.java:160)
+    at com.github.jknack.handlebars.internal.BaseTemplate.apply (BaseTemplate.java:130)
+    at com.github.jknack.handlebars.internal.TemplateList.merge (TemplateList.java:95)
+    at com.github.jknack.handlebars.internal.BaseTemplate.apply (BaseTemplate.java:130)
+    at com.github.jknack.handlebars.internal.ForwardingTemplate.apply (ForwardingTemplate.java:86)
+    at com.github.jknack.handlebars.internal.Partial.merge (Partial.java:228)
+    at com.github.jknack.handlebars.internal.BaseTemplate.apply (BaseTemplate.java:130)
+    at com.github.jknack.handlebars.internal.TemplateList.merge (TemplateList.java:95)
+    at com.github.jknack.handlebars.internal.BaseTemplate.apply (BaseTemplate.java:130)
+    at com.github.jknack.handlebars.internal.BaseTemplate.apply (BaseTemplate.java:118)
+    at com.github.jknack.handlebars.internal.ForwardingTemplate.apply (ForwardingTemplate.java:72)
+    at io.swagger.codegen.v3.templates.HandlebarTemplateEngine.getRendered (HandlebarTemplateEngine.java:26)
+    at io.swagger.codegen.v3.DefaultGenerator.processTemplateToFile (DefaultGenerator.java:795)
+    at io.swagger.codegen.v3.DefaultGenerator.generateModels (DefaultGenerator.java:438)
+    at io.swagger.codegen.v3.DefaultGenerator.generate (DefaultGenerator.java:779)
+    at io.swagger.codegen.v3.maven.plugin.CodeGenMojo.execute_ (CodeGenMojo.java:554)
+    at io.swagger.codegen.v3.maven.plugin.CodeGenMojo.execute (CodeGenMojo.java:319)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:126)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:328)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:903)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:280)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:203)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:569)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:361)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+    at org.codehaus.classworlds.Launcher.main (Launcher.java:41)
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make public boolean java.util.Collections$EmptyMap.isEmpty() accessible: module java.base does not "opens java.util" to unnamed module @4e5f391c
+    at java.lang.reflect.AccessibleObject.checkCanSetAccessible (AccessibleObject.java:354)
+    at java.lang.reflect.AccessibleObject.checkCanSetAccessible (AccessibleObject.java:297)
+    at java.lang.reflect.Method.checkCanSetAccessible (Method.java:200)
+    at java.lang.reflect.Method.setAccessible (Method.java:194)
+    at com.github.jknack.handlebars.context.MemberValueResolver.cache (MemberValueResolver.java:82)
+    at com.github.jknack.handlebars.context.MemberValueResolver.resolve (MemberValueResolver.java:54)
+    at com.github.jknack.handlebars.Context$CompositeValueResolver.resolve (Context.java:199)
+    at com.github.jknack.handlebars.internal.path.PropertyPath.eval (PropertyPath.java:52)
+    at com.github.jknack.handlebars.Context$PathExpressionChain.next (Context.java:361)
+    at com.github.jknack.handlebars.Context$PathExpressionChain.eval (Context.java:381)
+    at com.github.jknack.handlebars.Context.get (Context.java:621)
+    at com.github.jknack.handlebars.Context$PartialCtx.get (Context.java:165)
+    at com.github.jknack.handlebars.internal.Variable.value (Variable.java:183)
+    at com.github.jknack.handlebars.internal.Variable.merge (Variable.java:160)
+    at com.github.jknack.handlebars.internal.BaseTemplate.apply (BaseTemplate.java:130)
+    at com.github.jknack.handlebars.internal.TemplateList.merge (TemplateList.java:95)
+    at com.github.jknack.handlebars.internal.BaseTemplate.apply (BaseTemplate.java:130)
+    at com.github.jknack.handlebars.internal.ForwardingTemplate.apply (ForwardingTemplate.java:86)
+    at com.github.jknack.handlebars.internal.Partial.merge (Partial.java:228)
+    at com.github.jknack.handlebars.internal.BaseTemplate.apply (BaseTemplate.java:130)
+    at com.github.jknack.handlebars.internal.TemplateList.merge (TemplateList.java:95)
+    at com.github.jknack.handlebars.internal.BaseTemplate.apply (BaseTemplate.java:130)
+    at com.github.jknack.handlebars.internal.BaseTemplate.apply (BaseTemplate.java:118)
+    at com.github.jknack.handlebars.internal.ForwardingTemplate.apply (ForwardingTemplate.java:72)
+    at io.swagger.codegen.v3.templates.HandlebarTemplateEngine.getRendered (HandlebarTemplateEngine.java:26)
+    at io.swagger.codegen.v3.DefaultGenerator.processTemplateToFile (DefaultGenerator.java:795)
+    at io.swagger.codegen.v3.DefaultGenerator.generateModels (DefaultGenerator.java:438)
+    at io.swagger.codegen.v3.DefaultGenerator.generate (DefaultGenerator.java:779)
+    at io.swagger.codegen.v3.maven.plugin.CodeGenMojo.execute_ (CodeGenMojo.java:554)
+    at io.swagger.codegen.v3.maven.plugin.CodeGenMojo.execute (CodeGenMojo.java:319)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:126)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:328)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:903)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:280)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:203)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:569)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:361)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+    at org.codehaus.classworlds.Launcher.main (Launcher.java:41)
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Spline Spark Agent 2.2.0:
+[INFO] 
+[INFO] Spline Spark Agent ................................. SUCCESS [  3.245 s]
+[INFO] agent-commons_2.12 ................................. SUCCESS [ 36.630 s]
+[INFO] agent-core_2.12 .................................... FAILURE [  3.906 s]
+[INFO] examples_2.12 ...................................... SKIPPED
+[INFO] integration-tests_2.12 ............................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  44.088 s
+[INFO] Finished at: 2024-10-14T23:37:59+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal io.swagger.codegen.v3:swagger-codegen-maven-plugin:3.0.21:generate (swagger.api.v1_0) on project agent-core_2.12: Code generation failed. See above for the full exception. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :agent-core_2.12
+
+Process finished with exit code 1
